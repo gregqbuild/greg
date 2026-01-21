@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greg's Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+    }
+
+    header {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #444;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077b6;
+    }
+
+    .hero {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background: url('images/hero-banner.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #0077b6;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Greg's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Building the Future with Code</h2>
+  </div>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <img src="images/hero-banner.jpg" alt="Greg's profile photo" width="300" style="display:block;margin:20px auto;border-radius:50%;">
+    <p>Hello! I'm Greg, passionate about AI and systems programming. This site showcases my journey, projects, and ideas as I grow into a world-class engineer.</p>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Rust CLI Tool</h4>
+        <p>A command-line calculator built in Rust to practice ownership and borrowing.</p>
+      </div>
+      <div class="card">
+        <h4>Python Spam Filter</h4>
+        <p>A machine learning project using scikit-learn to classify emails.</p>
+      </div>
+      <div class="card">
+        <h4>Rust Web Server</h4>
+        <p>A lightweight REST API built with Rust for high-performance systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Feel free to reach out at <strong>greg@example.com</strong> or connect with me on GitHub.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Greg's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
